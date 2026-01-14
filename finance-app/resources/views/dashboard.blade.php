@@ -1,17 +1,29 @@
-<x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 dark:text-gray-200 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+@extends('layouts.app')
 
-    <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white dark:bg-gray-800 overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 text-gray-900 dark:text-gray-100">
-                    {{ __("You're logged in!") }}
-                </div>
-            </div>
-        </div>
-    </div>
-</x-app-layout>
+@section('title', 'Dashboard')
+
+@section('content')
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h2 fw-bold text-primary">
+        <i class="fas fa-tachometer-alt me-2"></i> Dashboard
+    </h1>
+</div>
+
+<style>
+.card:hover {
+    transform: translateY(-3px);
+    transition: all 0.25s ease-in-out;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.form-select:focus {
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.25) !important;
+    outline: none;
+    border-color: #fff;
+}
+
+.form-select option {
+    color: #000;
+}
+</style>
+

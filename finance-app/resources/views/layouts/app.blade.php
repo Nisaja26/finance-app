@@ -7,8 +7,6 @@
   <link href="{{ asset('sb-admin2/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet">
   <link href="{{ asset('sb-admin2/css/sb-admin-2.min.css') }}" rel="stylesheet">
   
-
-
   <!-- icon css fontawesome -->
 <link rel="icon" href="{{ asset('sb-admin2/img/favicon-new.png') }}" type="image/png">
 
